@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports App</title>
+  <style>
+    header {
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 16px;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>Welcome to GetSTAM</h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+  </header>
+  <p>Choose a sport to view:</p>
+  <ul id="sportsList">
+    <!-- Sports will be dynamically added here -->
+  </ul>
+  <script src="/sports.js">
+    // Fetch the list of sports dynamically and add hyperlinks
+    // fetch('/api/sports')
+    //   .then(response => response.json())
+    //   .then(sports => {
+    //     const sportsList = document.getElementById('sportsList');
+    //     sports.forEach(sport => {
+    //       const listItem = document.createElement('li');
+    //       const link = document.createElement('a');
+    //       link.href = `/sports/${sport.key}`;
+    //       link.textContent = sport.title;
+    //       listItem.appendChild(link);
+    //       sportsList.appendChild(listItem);
+    //     });
+    //   })
+    //   .catch(error => console.error('Error fetching sports:', error));
+  </script>
+  
+</body>
+</html>
+
+
+<!-- https://api.the-odds-api.com/v4/sports/americanfootball_nfl/odds/?apiKey=YOUR_API_KEY&regions=us&markets=h2h,spreads&oddsFormat=american -->
+
